@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C5130420D20F3E8BD14D2DD /* Pods_GoogleandChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998DA07765220477E72D9A4C /* Pods_GoogleandChat.framework */; };
+		A115C4B51D69DA9000F054EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A115C4B41D69DA9000F054EA /* AppDelegate.swift */; };
+		A115C4BA1D69DA9000F054EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A115C4B81D69DA9000F054EA /* Main.storyboard */; };
+		A115C4BC1D69DA9000F054EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A115C4BB1D69DA9000F054EA /* Assets.xcassets */; };
+		A115C4BF1D69DA9000F054EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A115C4BD1D69DA9000F054EA /* LaunchScreen.storyboard */; };
+		A1262DB21D6D560100979DA6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A1262DB11D6D560100979DA6 /* Podfile */; };
+		A157EEEF1D6B519B008AD5E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A157EEEE1D6B519B008AD5E7 /* GoogleService-Info.plist */; };
+		A157EEFB1D6B51ED008AD5E7 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A157EEFA1D6B51ED008AD5E7 /* FirebaseDatabase.framework */; };
+		A1A0E2661D6C3BD400323397 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A157EEF11D6B51E3008AD5E7 /* FirebaseInstanceID.framework */; };
+		A1A0E2701D6C3D0200323397 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A0E26F1D6C3D0200323397 /* GoogleUtilities.framework */; };
+		A1A5ADA91D6C1AEE00AFFDF5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A5ADA81D6C1AEE00AFFDF5 /* Helper.swift */; };
+		A1B158A61D6D457D00315F93 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B158971D6D457D00315F93 /* FirebaseAnalytics.framework */; };
+		A1B158A71D6D457D00315F93 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B158981D6D457D00315F93 /* FirebaseAuth.framework */; };
+		A1B158A81D6D457D00315F93 /* FirebaseDynamicLinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B158991D6D457D00315F93 /* FirebaseDynamicLinks.framework */; };
+		A1B158AA1D6D457D00315F93 /* FirebaseInvites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1589B1D6D457D00315F93 /* FirebaseInvites.framework */; };
+		A1B158AB1D6D457D00315F93 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1589C1D6D457D00315F93 /* GoogleAppUtilities.framework */; };
+		A1B158AC1D6D457D00315F93 /* GoogleAuthUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1589D1D6D457D00315F93 /* GoogleAuthUtilities.framework */; };
+		A1B158AD1D6D457D00315F93 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1589E1D6D457D00315F93 /* GoogleInterchangeUtilities.framework */; };
+		A1B158AE1D6D457D00315F93 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1589F1D6D457D00315F93 /* GoogleMobileAds.framework */; };
+		A1B158AF1D6D457D00315F93 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B158A01D6D457D00315F93 /* GoogleNetworkingUtilities.framework */; };
+		A1B158B01D6D457D00315F93 /* GoogleParsingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B158A11D6D457D00315F93 /* GoogleParsingUtilities.framework */; };
+		A1B158B11D6D457D00315F93 /* GooglePlusUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B158A21D6D457D00315F93 /* GooglePlusUtilities.framework */; };
+		A1B158B21D6D457D00315F93 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B158A31D6D457D00315F93 /* GoogleSignIn.framework */; };
+		A1B158B31D6D457D00315F93 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B158A41D6D457D00315F93 /* GoogleSymbolUtilities.framework */; };
+		A1B158B41D6D457D00315F93 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B158A51D6D457D00315F93 /* GoogleUtilities.framework */; };
+		A1FAC6ED1D69DC3100AF225E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FAC6EC1D69DC3100AF225E /* LoginViewController.swift */; };
+		A1FAC6EF1D69DC3800AF225E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FAC6EE1D69DC3800AF225E /* ChatViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		998DA07765220477E72D9A4C /* Pods_GoogleandChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleandChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E6059EBAADE1F2DB86AA4C6 /* Pods-GoogleandChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleandChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleandChat/Pods-GoogleandChat.debug.xcconfig"; sourceTree = "<group>"; };
+		A115C4B11D69DA9000F054EA /* GoogleandChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleandChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A115C4B41D69DA9000F054EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A115C4B91D69DA9000F054EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A115C4BB1D69DA9000F054EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A115C4BE1D69DA9000F054EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A115C4C01D69DA9000F054EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1262DB11D6D560100979DA6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A157EEEE1D6B519B008AD5E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A157EEF11D6B51E3008AD5E7 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Firebase/Analytics/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		A157EEFA1D6B51ED008AD5E7 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Firebase/Database/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		A1A0E26F1D6C3D0200323397 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Firebase/Analytics/GoogleUtilities.framework; sourceTree = "<group>"; };
+		A1A5ADA11D6C0F5500AFFDF5 /* GoogleandChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleandChat-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		A1A5ADA81D6C1AEE00AFFDF5 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		A1B158961D6D454700315F93 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		A1B158971D6D457D00315F93 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		A1B158981D6D457D00315F93 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		A1B158991D6D457D00315F93 /* FirebaseDynamicLinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDynamicLinks.framework; path = Frameworks/FirebaseDynamicLinks.framework; sourceTree = "<group>"; };
+		A1B1589B1D6D457D00315F93 /* FirebaseInvites.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInvites.framework; path = Frameworks/FirebaseInvites.framework; sourceTree = "<group>"; };
+		A1B1589C1D6D457D00315F93 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = Frameworks/GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		A1B1589D1D6D457D00315F93 /* GoogleAuthUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAuthUtilities.framework; path = Frameworks/GoogleAuthUtilities.framework; sourceTree = "<group>"; };
+		A1B1589E1D6D457D00315F93 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		A1B1589F1D6D457D00315F93 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		A1B158A01D6D457D00315F93 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		A1B158A11D6D457D00315F93 /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
+		A1B158A21D6D457D00315F93 /* GooglePlusUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlusUtilities.framework; path = Frameworks/GooglePlusUtilities.framework; sourceTree = "<group>"; };
+		A1B158A31D6D457D00315F93 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		A1B158A41D6D457D00315F93 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		A1B158A51D6D457D00315F93 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		A1FAC6EC1D69DC3100AF225E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A1FAC6EE1D69DC3800AF225E /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		FDD72ED0940324EE8C1713A6 /* Pods-GoogleandChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleandChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleandChat/Pods-GoogleandChat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A115C4AE1D69DA9000F054EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B158AF1D6D457D00315F93 /* GoogleNetworkingUtilities.framework in Frameworks */,
+				A1B158B31D6D457D00315F93 /* GoogleSymbolUtilities.framework in Frameworks */,
+				A1A0E2701D6C3D0200323397 /* GoogleUtilities.framework in Frameworks */,
+				A1A0E2661D6C3BD400323397 /* FirebaseInstanceID.framework in Frameworks */,
+				A1B158B41D6D457D00315F93 /* GoogleUtilities.framework in Frameworks */,
+				A1B158A81D6D457D00315F93 /* FirebaseDynamicLinks.framework in Frameworks */,
+				A1B158A61D6D457D00315F93 /* FirebaseAnalytics.framework in Frameworks */,
+				A1B158AB1D6D457D00315F93 /* GoogleAppUtilities.framework in Frameworks */,
+				A1B158B01D6D457D00315F93 /* GoogleParsingUtilities.framework in Frameworks */,
+				A1B158AD1D6D457D00315F93 /* GoogleInterchangeUtilities.framework in Frameworks */,
+				A1B158A71D6D457D00315F93 /* FirebaseAuth.framework in Frameworks */,
+				A1B158AA1D6D457D00315F93 /* FirebaseInvites.framework in Frameworks */,
+				A1B158AC1D6D457D00315F93 /* GoogleAuthUtilities.framework in Frameworks */,
+				A1B158B11D6D457D00315F93 /* GooglePlusUtilities.framework in Frameworks */,
+				A1B158B21D6D457D00315F93 /* GoogleSignIn.framework in Frameworks */,
+				A1B158AE1D6D457D00315F93 /* GoogleMobileAds.framework in Frameworks */,
+				A157EEFB1D6B51ED008AD5E7 /* FirebaseDatabase.framework in Frameworks */,
+				9C5130420D20F3E8BD14D2DD /* Pods_GoogleandChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E776BA76D248A626883E02F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				998DA07765220477E72D9A4C /* Pods_GoogleandChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A115C4A81D69DA9000F054EA = {
+			isa = PBXGroup;
+			children = (
+				A115C4B31D69DA9000F054EA /* GoogleandChat */,
+				A115C4B21D69DA9000F054EA /* Products */,
+				D7BBA9D7FC626CC7661BC96E /* Pods */,
+				7E776BA76D248A626883E02F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A115C4B21D69DA9000F054EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A115C4B11D69DA9000F054EA /* GoogleandChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A115C4B31D69DA9000F054EA /* GoogleandChat */ = {
+			isa = PBXGroup;
+			children = (
+				A115C4B41D69DA9000F054EA /* AppDelegate.swift */,
+				A1FAC6EC1D69DC3100AF225E /* LoginViewController.swift */,
+				A1FAC6EE1D69DC3800AF225E /* ChatViewController.swift */,
+				A1A5ADA81D6C1AEE00AFFDF5 /* Helper.swift */,
+				A115C4B81D69DA9000F054EA /* Main.storyboard */,
+				A115C4BB1D69DA9000F054EA /* Assets.xcassets */,
+				A115C4BD1D69DA9000F054EA /* LaunchScreen.storyboard */,
+				A115C4C01D69DA9000F054EA /* Info.plist */,
+				A1B158961D6D454700315F93 /* Firebase.h */,
+				A1A5ADA11D6C0F5500AFFDF5 /* GoogleandChat-Bridging-Header.h */,
+				A157EEEE1D6B519B008AD5E7 /* GoogleService-Info.plist */,
+				A1262DB11D6D560100979DA6 /* Podfile */,
+				A157EEFC1D6B51F8008AD5E7 /* Frameworks */,
+			);
+			path = GoogleandChat;
+			sourceTree = "<group>";
+		};
+		A157EEFC1D6B51F8008AD5E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B158971D6D457D00315F93 /* FirebaseAnalytics.framework */,
+				A1B158981D6D457D00315F93 /* FirebaseAuth.framework */,
+				A1B158991D6D457D00315F93 /* FirebaseDynamicLinks.framework */,
+				A1B1589B1D6D457D00315F93 /* FirebaseInvites.framework */,
+				A1B1589C1D6D457D00315F93 /* GoogleAppUtilities.framework */,
+				A1B1589D1D6D457D00315F93 /* GoogleAuthUtilities.framework */,
+				A1B1589E1D6D457D00315F93 /* GoogleInterchangeUtilities.framework */,
+				A1B1589F1D6D457D00315F93 /* GoogleMobileAds.framework */,
+				A1B158A01D6D457D00315F93 /* GoogleNetworkingUtilities.framework */,
+				A1B158A11D6D457D00315F93 /* GoogleParsingUtilities.framework */,
+				A1B158A21D6D457D00315F93 /* GooglePlusUtilities.framework */,
+				A1B158A31D6D457D00315F93 /* GoogleSignIn.framework */,
+				A1B158A41D6D457D00315F93 /* GoogleSymbolUtilities.framework */,
+				A1B158A51D6D457D00315F93 /* GoogleUtilities.framework */,
+				A1A0E26F1D6C3D0200323397 /* GoogleUtilities.framework */,
+				A157EEFA1D6B51ED008AD5E7 /* FirebaseDatabase.framework */,
+				A157EEF11D6B51E3008AD5E7 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D7BBA9D7FC626CC7661BC96E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E6059EBAADE1F2DB86AA4C6 /* Pods-GoogleandChat.debug.xcconfig */,
+				FDD72ED0940324EE8C1713A6 /* Pods-GoogleandChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A115C4B01D69DA9000F054EA /* GoogleandChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A115C4C31D69DA9000F054EA /* Build configuration list for PBXNativeTarget "GoogleandChat" */;
+			buildPhases = (
+				8CC5EA43F5FEF106447AC1A2 /* [CP] Check Pods Manifest.lock */,
+				A115C4AD1D69DA9000F054EA /* Sources */,
+				A115C4AE1D69DA9000F054EA /* Frameworks */,
+				A115C4AF1D69DA9000F054EA /* Resources */,
+				F51988885D6023EC36072E51 /* [CP] Embed Pods Frameworks */,
+				9D343D394F634D0F415E7948 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleandChat;
+			productName = GoogleandChat;
+			productReference = A115C4B11D69DA9000F054EA /* GoogleandChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A115C4A91D69DA9000F054EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = CrazyQuan;
+				TargetAttributes = {
+					A115C4B01D69DA9000F054EA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A115C4AC1D69DA9000F054EA /* Build configuration list for PBXProject "GoogleandChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A115C4A81D69DA9000F054EA;
+			productRefGroup = A115C4B21D69DA9000F054EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A115C4B01D69DA9000F054EA /* GoogleandChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A115C4AF1D69DA9000F054EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1262DB21D6D560100979DA6 /* Podfile in Resources */,
+				A115C4BF1D69DA9000F054EA /* LaunchScreen.storyboard in Resources */,
+				A157EEEF1D6B519B008AD5E7 /* GoogleService-Info.plist in Resources */,
+				A115C4BC1D69DA9000F054EA /* Assets.xcassets in Resources */,
+				A115C4BA1D69DA9000F054EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CC5EA43F5FEF106447AC1A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D343D394F634D0F415E7948 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleandChat/Pods-GoogleandChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F51988885D6023EC36072E51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleandChat/Pods-GoogleandChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A115C4AD1D69DA9000F054EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FAC6ED1D69DC3100AF225E /* LoginViewController.swift in Sources */,
+				A1FAC6EF1D69DC3800AF225E /* ChatViewController.swift in Sources */,
+				A115C4B51D69DA9000F054EA /* AppDelegate.swift in Sources */,
+				A1A5ADA91D6C1AEE00AFFDF5 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A115C4B81D69DA9000F054EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A115C4B91D69DA9000F054EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A115C4BD1D69DA9000F054EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A115C4BE1D69DA9000F054EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A115C4C11D69DA9000F054EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A115C4C21D69DA9000F054EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A115C4C41D69DA9000F054EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E6059EBAADE1F2DB86AA4C6 /* Pods-GoogleandChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Firebase/Analytics",
+					"$(PROJECT_DIR)/Firebase/Database",
+					"$(PROJECT_DIR)/Firebase/Messaging",
+					"$(PROJECT_DIR)/Firebase/AppIndexing",
+					"$(PROJECT_DIR)/Firebase/Auth",
+					"$(PROJECT_DIR)/Firebase/Crash",
+					"$(PROJECT_DIR)/Firebase/DynamicLinks",
+					"$(PROJECT_DIR)/Firebase/RemoteConfig",
+					"$(PROJECT_DIR)/Firebase/Storage",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Firebase/Invites",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = GoogleandChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = Max.Min.GoogleandChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoogleandChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A115C4C51D69DA9000F054EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDD72ED0940324EE8C1713A6 /* Pods-GoogleandChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Firebase/Analytics",
+					"$(PROJECT_DIR)/Firebase/Database",
+					"$(PROJECT_DIR)/Firebase/Messaging",
+					"$(PROJECT_DIR)/Firebase/AppIndexing",
+					"$(PROJECT_DIR)/Firebase/Auth",
+					"$(PROJECT_DIR)/Firebase/Crash",
+					"$(PROJECT_DIR)/Firebase/DynamicLinks",
+					"$(PROJECT_DIR)/Firebase/RemoteConfig",
+					"$(PROJECT_DIR)/Firebase/Storage",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Firebase/Invites",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = GoogleandChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = Max.Min.GoogleandChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoogleandChat-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A115C4AC1D69DA9000F054EA /* Build configuration list for PBXProject "GoogleandChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A115C4C11D69DA9000F054EA /* Debug */,
+				A115C4C21D69DA9000F054EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A115C4C31D69DA9000F054EA /* Build configuration list for PBXNativeTarget "GoogleandChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A115C4C41D69DA9000F054EA /* Debug */,
+				A115C4C51D69DA9000F054EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A115C4A91D69DA9000F054EA /* Project object */;
+}
